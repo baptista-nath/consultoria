@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 400 80" role="img" aria-label="Inturion logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#ff7b5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="80" rx="12" fill="none"/>
+  <!-- Icon: stylized shield/chevron -->
+  <g transform="translate(8,8)">
+    <path d="M34 4 L58 4 L74 36 L58 68 L34 68 L18 36 Z" fill="url(#g)" opacity="0.95"/>
+    <path d="M44 22 L56 22 L62 36 L56 50 L44 50 L38 36 Z" fill="#071018" opacity="0.8"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(96,52)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="28" fill="url(#g)">Inturion</text>
+    <text x="0" y="22" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="11" fill="#9aa3b2">Consultoria Estratégica</text>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 400 80" role="img" aria-label="Inturion logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 400 80" role="img" aria-label="Intureon logo">
   <defs>
     <linearGradient id="g" x1="0" x2="1">
       <stop offset="0%" stop-color="#d4af37"/>
@@ -14,7 +14,7 @@
   </g>
   <!-- Wordmark -->
   <g transform="translate(96,52)">
-    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="28" fill="url(#g)">Inturion</text>
-    <text x="0" y="22" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="11" fill="#9aa3b2">Consultoria Estratégica</text>
+    <text x="0" y="0" font-family="'Open Sans Condensed', Arial, sans-serif" font-weight="800" font-size="28" fill="url(#g)">Intureon</text>
+    <text x="0" y="22" font-family="'Open Sans Condensed', Arial, sans-serif" font-weight="500" font-size="11" fill="#9aa3b2">Mentoria Estratégica</text>
   </g>
 </svg>

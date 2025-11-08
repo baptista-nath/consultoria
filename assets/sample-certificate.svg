@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-label="Exemplo de Certificado Intureon">
+  <rect width="100%" height="100%" fill="#0b1220"/>
+  <rect x="40" y="40" width="1120" height="770" rx="20" fill="#071018" stroke="#d4af37" stroke-width="6"/>
+  <g transform="translate(120,160)">
+    <text x="0" y="0" font-family="'Open Sans Condensed', sans-serif" font-size="36" font-weight="700" fill="#d4af37">CERTIFICADO DE PARTICIPAÇÃO</text>
+    <text x="0" y="80" font-family="'Open Sans Condensed', sans-serif" font-size="22" fill="#ffffff">Este certificado reconhece que</text>
+    <text x="0" y="140" font-family="'Open Sans Condensed', sans-serif" font-size="44" font-weight="700" fill="#ffffff">[NOME DO PARTICIPANTE]</text>
+    <text x="0" y="210" font-family="'Open Sans Condensed', sans-serif" font-size="20" fill="#9aa3b2">concluiu a Mentoria Intureon — Programa Intensivo</text>
+    <text x="0" y="260" font-family="'Open Sans Condensed', sans-serif" font-size="18" fill="#9aa3b2">Data: _________</text>
+  </g>
+  <g transform="translate(120,560)">
+    <text x="0" y="0" font-family="'Open Sans Condensed', sans-serif" font-size="16" fill="#9aa3b2">Intureon • Mentoria Estratégica</text>
+  </g>
+</svg>

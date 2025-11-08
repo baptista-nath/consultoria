@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // WhatsApp quick contact
   const whatsappNumber = '+5511999999999'; // <- substitua pelo número real (formato internacional, sem espaços)
-  const defaultMessage = encodeURIComponent('Olá, tenho interesse na consultoria Inturion — quero agendar.');
+  const defaultMessage = encodeURIComponent('Olá, tenho interesse na mentoria Intureon — quero agendar.');
 
   function openWhatsApp(){
     const base = 'https://wa.me/';
@@ -104,6 +104,93 @@ document.addEventListener('DOMContentLoaded', function(){
 
   const headerWA = document.getElementById('header-whatsapp');
   if(headerWA) headerWA.addEventListener('click', function(e){ e.preventDefault(); openWhatsApp(); });
+  // Unified lead capture: name / email / phone + options
+  const leadForm = document.getElementById('lead-form');
+  const leadFeedback = document.getElementById('lead-feedback');
+  const waGroupUrl = 'https://chat.whatsapp.com/INVITE_CODE'; // <- substitua pelo link real do grupo
+
+  function saveLead(lead){
+    try{
+      const key = 'intureon_leads_v1';
+      const existing = JSON.parse(localStorage.getItem(key) || '[]');
+      existing.push(lead);
+      localStorage.setItem(key, JSON.stringify(existing));
+    }catch(err){
+      // fail silently
+    }
+  }
+
+  if(leadForm){
+    leadForm.addEventListener('submit', async function(e){
+      e.preventDefault();
+      leadFeedback.textContent = '';
+      const name = document.getElementById('lead-name').value.trim();
+      const email = document.getElementById('lead-email').value.trim();
+      const phone = document.getElementById('lead-phone').value.trim();
+      const wantGroup = document.getElementById('lead-want-group').checked;
+      const wantEbook = document.getElementById('lead-want-ebook').checked;
+
+      if(!name || !email || !phone){
+        leadFeedback.textContent = 'Por favor preencha nome, e-mail e telefone.';
+        return;
+      }
+
+      // store lead locally (placeholder for real backend)
+      const lead = {name, email, phone, wantGroup, wantEbook, createdAt: new Date().toISOString()};
+      saveLead(lead);
+
+      try{
+        leadFeedback.textContent = 'Processando...';
+        await new Promise(r => setTimeout(r, 800));
+
+        // If user wants ebook, generate placeholder download (text file) — or replace with real PDF link
+        if(wantEbook){
+          const content = `eBook Intureon - Conteúdo de exemplo\n\nNome: ${name}\nEmail: ${email}\n\nObrigado por baixar!`;
+          const blob = new Blob([content], {type: 'text/plain;charset=utf-8'});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'ebook-intureon-sample.txt';
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+        }
+
+        // If user wants group, open group invite
+        if(wantGroup){
+          window.open(waGroupUrl, '_blank');
+        }
+
+        leadFeedback.textContent = 'Pronto! Verifique seu e-mail e downloads.';
+        leadForm.reset();
+      }catch(err){
+        leadFeedback.textContent = 'Ocorreu um erro. Tente novamente.';
+      }
+    });
+  }
+
+  // Certificate modal: open when elements with [data-cert-open] are clicked
+  function openCertModal(){
+    // prevent duplicate
+    if(document.querySelector('.cert-modal')) return;
+    const modal = document.createElement('div');
+    modal.className = 'cert-modal';
+    modal.innerHTML = `
+      <div class="inner">
+        <button class="close" aria-label="Fechar">×</button>
+        <img src="assets/sample-certificate.svg" alt="Exemplo de certificado Intureon" />
+      </div>
+    `;
+    modal.addEventListener('click', (ev)=>{ if(ev.target===modal) modal.remove(); });
+    modal.querySelector('.close').addEventListener('click', ()=> modal.remove());
+    document.body.appendChild(modal);
+    // close on esc
+    function onKey(e){ if(e.key==='Escape'){ modal.remove(); document.removeEventListener('keydown', onKey); } }
+    document.addEventListener('keydown', onKey);
+  }
+
+  document.querySelectorAll('[data-cert-open]').forEach(el=> el.addEventListener('click', function(e){ e.preventDefault(); openCertModal(); }));
 
   // Lightweight reveal animation for cards (uses IntersectionObserver)
   try{

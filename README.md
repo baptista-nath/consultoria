@@ -1,13 +1,13 @@
-# Landing Page — Inturion (Black Friday)
+# Landing Page — Intureon (Black Friday)
 
-Arquivos gerados: página estática de alta conversão para promoção Black Friday (40% OFF) com foco em agendamentos de consultoria para a marca Inturion.
+Arquivos gerados: página estática de alta conversão para promoção Black Friday (40% OFF) com foco em agendamentos de mentoria para a marca Intureon.
 
 Arquivos principais
 
 - `index.html` — Estrutura da landing.
 - `assets/styles.css` — Estilos (mobile-first, tema escuro premium).
 - `assets/script.js` — Contador regressivo, submissão mock do formulário, modal de vídeo e microinterações.
-- `assets/logo.svg` — Logo gerada para Inturion.
+- `assets/logo.svg` — Logo gerada para Intureon.
 
 Como abrir
 
@@ -31,6 +31,10 @@ Próximos passos recomendados
 - Integrar o formulário com Calendly, HubSpot, Pipedrive ou um endpoint próprio.
 - A/B test de títulos e CTAs; medir conversões (eventos de formulário e cliques nos CTAs).
 
+Observação sobre gravações
+
+- As aulas serão gravadas e disponibilizadas na plataforma Kiwify para participantes. Se for usar Kiwify, atualize o link de acesso e instruções na página ou no e-mail de boas-vindas.
+
 Adicionar/alterar a imagem de fundo da hero
 
 - A página agora usa uma imagem de fundo na seção hero com uma sobreposição preta semitransparente, mantendo o tom Black Friday mas adicionando profundidade visual.
@@ -44,9 +48,9 @@ Adicionar/alterar a imagem de fundo da hero
 Observação: a sobreposição preta está configurada com `background: rgba(0,0,0,0.56)` no pseudo-elemento `::after` — ajuste o alfa para clarear/escurecer.
 # Landing Page — Christian Ferreira (Black Friday)
 
-# Landing Page — Inturion (Black Friday)
+# Landing Page — Intureon (Black Friday)
 
-Arquivos gerados: página estática de alta conversão para promoção Black Friday (40% OFF) com foco em agendamentos de consultoria para a marca Inturion.
+Arquivos gerados: página estática de alta conversão para promoção Black Friday (40% OFF) com foco em agendamentos de mentoria para a marca Intureon.
 
  Arquivos principais
  `index.html` — Estrutura da landing.

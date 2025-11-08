@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inturion — Consultoria Estratégica (Black Friday)</title>
+    <title>Intureon — Mentoria Estratégica (Black Friday)</title>
     <meta
       name="description"
-      content="Consultoria estratégica para fundadores e CEOs — crescimento acelerado, gestão e times. Oferta Black Friday: 40% OFF."
+      content="Mentoria estratégica para fundadores e CEOs — crescimento acelerado, gestão e times. Oferta Black Friday: 40% OFF."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesome for icons -->
@@ -26,7 +26,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="#" class="brand">
-          <img src="assets/logo.svg" alt="Inturion" class="logo-lg" />
+          <img src="assets/logo.svg" alt="Intureon" class="logo-lg" />
         </a>
         <nav class="header-actions">
           <a class="btn ghost small" href="#oferta">Oferta</a>
@@ -46,13 +46,13 @@
           <p class="eyebrow">Oferta Black Friday • Vagas Limitadas</p>
           <h1>
             Destrave o próximo nível da sua empresa.<br /><strong
-              >Consultoria Estratégica — Inturion</strong
+              >Mentoria Estratégica — Intureon</strong
             >
           </h1>
           <p class="lead">
-            A Inturion ajuda fundadores e CEOs a escalar negócios, otimizar
-            gestão e transformar times — estratégias práticas com foco em
-            resultados.
+            A Intureon oferece mentoria prática para fundadores e CEOs:
+            estratégias de crescimento, melhoria de gestão e fortalecimento de
+            times com foco em resultados.
           </p>
 
           <div class="hero-ctas">
@@ -60,6 +60,7 @@
               <a class="btn primary" id="cta-reserve" href="#contato"
                 >Reserve sua Vaga — 50% OFF</a
               >
+              <span class="cert-badge" data-cert-open>Inclui certificado</span>
               <span class="cta-note"
                 >Vagas limitadas — promoção válida até o término do
                 contador</span
@@ -80,15 +81,7 @@
         </div>
 
         <aside class="hero-card">
-          <div class="card-top">
-            <div class="avatar">
-              <img class="pfp" alt="Logo Inturion" src="assets/logo.svg" />
-            </div>
-            <h3>Inturion</h3>
-            <p class="muted">
-              Consultoria Estratégica • Crescimento & Transformação
-            </p>
-          </div>
+          <!-- avatar and brand text removed from video card as requested -->
 
           <div class="hero-media" aria-hidden="false">
             <div
@@ -96,8 +89,8 @@
               data-video="https://www.youtube.com/embed/VIDEO_ID?rel=0"
             >
               <img
-                alt="Vídeo de Apresentação Inturion"
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101217'/><text x='50%' y='50%' font-size='22' fill='%23ffffff' text-anchor='middle' font-family='Inter, sans-serif'>Vídeo de Apresentação Inturion (substituir)</text></svg>"
+                alt="Vídeo de Apresentação"
+                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101217'/><text x='50%' y='50%' font-size='22' fill='%23ffffff' text-anchor='middle' font-family='Open Sans Condensed, sans-serif'>Vídeo de Apresentação (substituir)</text></svg>"
               />
               <button class="play" aria-label="Assistir vídeo">
                 <i class="fa-solid fa-play"></i>
@@ -111,6 +104,11 @@
               </div>
               <div class="note">40% OFF — Black Friday • Vagas Limitadas</div>
               <a class="btn primary block" href="#contato">Garantir Desconto</a>
+              <div style="margin-top: 8px">
+                <span class="cert-badge small" data-cert-open
+                  >Inclui certificado</span
+                >
+              </div>
             </div>
           </div>
         </aside>
@@ -145,73 +143,166 @@
         </div>
       </section>
 
-      <section class="section expertise container">
+      <!-- Unified lead capture: collects name, email and phone; user can choose group and/or ebook -->
+      <section class="section engage container lead-capture">
         <div class="split">
           <div>
-            <h2>Sobre a Inturion</h2>
-            <p>
-              A Inturion atua com fundadores e CEOs para acelerar crescimento,
-              resolver gargalos operacionais e fortalecer times. Estratégia
-              prática, execução ágil e métricas claras.
+            <h2>Inscreva-se para receceber um presente!</h2>
+            <p class="muted">
+              Deixe seu nome, e-mail e WhatsApp. Você terá acesso a um e-book
+              exclusivo sobre estratégias de crescimento.
             </p>
 
-            <ul class="bullets">
-              <li>
-                <strong>+10 anos</strong> em consultoria estratégica e
-                transformação
-              </li>
-              <li>
-                <strong>Clientes:</strong> TechGrow, NextCorp, ScaleLab
-                (parceiros fictícios)
-              </li>
-              <li>
-                <strong>Foco:</strong> crescimento acelerado, gestão eficiente e
-                cultura de alta performance
-              </li>
-            </ul>
+            <!-- Use real present image and make it a download CTA -->
+            <a
+              href="assets/Estratégias Comprovadas para Transformar sua empresa (1).png"
+              class="ebook-link"
+              download
+              aria-label="Baixar eBook - presente"
+            >
+              <img
+                src="assets/Estratégias Comprovadas para Transformar sua empresa (1).png"
+                alt="E-book grátis — presente"
+                class="ebook-gift"
+              />
+            </a>
           </div>
 
           <div>
-            <h3>O que dizem da Inturion</h3>
-            <div class="testimonials">
-              <blockquote>
-                “A parceria com a Inturion transformou nossa estratégia e nos
-                levou a crescer 3x em 9 meses.”
-                <cite>— Ana, CEO TechGrow</cite>
-              </blockquote>
-              <blockquote>
-                “Resultados claros, foco em execução. Recomendo a Inturion para
-                quem precisa escalar rápido.”
-                <cite>— Marcos, Founder NextCorp</cite>
-              </blockquote>
+            <div class="card">
+              <h4>Inscreva-se</h4>
+              <form id="lead-form" class="mini-form">
+                <label
+                  >Nome completo
+                  <input type="text" id="lead-name" name="leadName" required />
+                </label>
+                <label
+                  >Email
+                  <input
+                    type="email"
+                    id="lead-email"
+                    name="leadEmail"
+                    required
+                  />
+                </label>
+                <label
+                  >WhatsApp
+                  <input
+                    type="tel"
+                    id="lead-phone"
+                    name="leadPhone"
+                    placeholder="+55 11 9xxxx-xxxx"
+                    required
+                  />
+                </label>
+                <label style="font-weight: 600">Opções</label>
+                <label
+                  class="checkbox"
+                  aria-label="Quero entrar no grupo WhatsApp"
+                  ><input type="checkbox" id="lead-want-group" /> Quero entrar
+                  no grupo WhatsApp</label
+                >
+                <label class="checkbox" aria-label="Quero baixar o eBook"
+                  ><input type="checkbox" id="lead-want-ebook" checked /> Quero
+                  baixar o eBook</label
+                >
+
+                <div class="form-actions">
+                  <button class="btn primary" type="submit">
+                    Enviar e Receber
+                  </button>
+                </div>
+                <div
+                  id="lead-feedback"
+                  class="feedback"
+                  aria-live="polite"
+                ></div>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
       <section id="oferta" class="section oferta container">
-        <h2>Oferta Black Friday — Pacote Premium</h2>
+        <h2>Oferta Black Friday — Mentoria Premium</h2>
         <div class="offer-grid">
           <div class="offer-features">
             <ul>
-              <li>Diagnóstico intensivo de 2 dias</li>
-              <li>Plano estratégico trimestral com roadmap tático</li>
-              <li>2 sessões de implementação com equipe</li>
-              <li>Apoio por 30 dias via Slack/Email</li>
+              <li>
+                Programa de mentoria com 6 encontros ao vivo — 1 vez por semana
+                (início em fevereiro)
+              </li>
+              <li>
+                Aulas gravadas e disponibilizadas na plataforma Kiwify para
+                participantes (acesso às gravações).
+              </li>
+              <li>Plano individual de desenvolvimento com metas trimestrais</li>
+              <li>
+                Sessões práticas para implementação de estratégias e revisão de
+                progresso
+              </li>
+              <li>Materiais, templates e acesso a gravações das sessões</li>
+              <li>Certificado de conclusão ao final da mentoria</li>
             </ul>
           </div>
           <div class="offer-card">
             <div class="tag">Black Friday</div>
-            <h3>Pacote Premium</h3>
+            <h3>Mentoria Premium</h3>
             <p class="muted">
-              Perfeito para empresas prontas para escalar e resolver gargalos
-              internos.
+              Perfeito para fundadores e líderes que querem acelerar decisões
+              estratégicas, implementar práticas e obter suporte contínuo
+              durante o processo.
+            </p>
+            <p class="muted" style="margin-top: 8px; font-weight: 700">
+              Início em fevereiro — 6 encontros ao vivo (1x por semana)
             </p>
             <div class="price big">
               <span class="old">R$ 6.000</span>
               <span class="new">R$ 3.600</span>
             </div>
             <a class="btn primary block" href="#contato">Quero 40% OFF</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificate showcase: standalone, strategic placement -->
+      <section id="certificate" class="section certificate container">
+        <div class="split">
+          <div>
+            <h2>Certificado de conclusão</h2>
+            <p class="muted">
+              Ao concluir a Mentoria Intureon, cada participante recebe um
+              certificado de participação assinado. O certificado comprova horas
+              de participação e os principais temas trabalhados durante o
+              programa.
+            </p>
+
+            <ul class="bullets">
+              <li>
+                <strong>Reconhecimento:</strong> documento digital com o nome do
+                participante e data de conclusão.
+              </li>
+              <li>
+                <strong>Aplicabilidade:</strong> ideal para perfis
+                profissionais, LinkedIn e apresentações de portfolio.
+              </li>
+            </ul>
+
+            <p style="margin-top: 14px">
+              Você pode baixar um exemplo do certificado antes de participar —
+              ele será personalizado com seu nome ao finalizar a mentoria.
+            </p>
+          </div>
+
+          <div>
+            <div class="card certificate-preview">
+              <div class="preview-wrap">
+                <img
+                  src="assets/xxxxxxxxx xxxxx.png"
+                  alt="Exemplo de certificado Intureon"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -224,6 +315,16 @@
             <div class="answer">
               Dois dias de imersão, com entrevistas e análise de dados
               principais. Entregamos um roadmap prático ao final.
+            </div>
+          </details>
+          <details>
+            <summary>
+              As aulas são gravadas? Onde posso assistir às gravações?
+            </summary>
+            <div class="answer">
+              Sim — todas as aulas são gravadas e disponibilizadas na plataforma
+              Kiwify. Participantes recebem acesso às gravações após cada
+              encontro.
             </div>
           </details>
           <details>
@@ -244,10 +345,10 @@
       </section>
 
       <section id="contato" class="section contato container">
-        <h2>Reserve sua consultoria</h2>
+        <h2>Reserve sua mentoria</h2>
         <p class="muted">
-          Preencha o formulário e nossa equipe (ou o próprio Christian) fará o
-          contato para agendar.
+          Preencha o formulário e nossa equipe fará o contato para agendar a
+          mentoria.
         </p>
 
         <form id="contact-form" class="contact-form" novalidate>
@@ -277,7 +378,7 @@
 
           <div class="form-actions">
             <button class="btn primary" type="submit">
-              Agendar Consultoria — 40% OFF
+              Agendar Mentoria — 40% OFF
             </button>
             <button class="btn ghost" type="button" id="btn-schedule">
               Agendar Rápido (Calendário)

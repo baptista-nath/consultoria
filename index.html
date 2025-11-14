@@ -6,270 +6,415 @@
     <title>Intureon — Mentoria Estratégica (Black Friday)</title>
     <meta
       name="description"
-      content="Mentoria estratégica para fundadores e CEOs — crescimento acelerado, gestão e times. Oferta Black Friday: 40% OFF."
+      content="Mentoria estratégica para fundadores e CEOs — crescimento acelerado, gestão e times. Oferta Black Friday."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans+Condensed:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome for icons -->
+
+    <meta property="og:site_name" content="Intureon" />
+    <meta
+      property="og:title"
+      content="BLACK FRIDAY INTUREON — Mentoria de Gestão"
+    />
+    <meta
+      property="og:description"
+      content="Mentoria de Gestão Intureon — Vagas limitadas. Entre no Grupo VIP do WhatsApp e garanta a oferta da Black Friday."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/presente.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/styles.css" />
-    <script defer src="assets/script.js"></script>
+
+   <style>
+        /* NOVA REGRA: Força o Header a ter no mínimo a altura da tela */
+        .hero {
+            min-height: 100vh; /* Ocupa 100% da altura visível da tela */
+            display: flex; /* Garante que o conteúdo interno use o 100% */
+            flex-direction: column;
+            justify-content: center; /* Centraliza o conteúdo (hero-inner) verticalmente */
+        }
+        
+        /* ... (Mantenha as regras anteriores aqui) ... */
+        @media (min-width: 980px) {
+        .hero-inner {
+          /* 50% para cada coluna (1fr / 1fr) */
+          grid-template-columns: 1fr 1fr !important; 
+          gap: 36px !important;
+            }
+        }
+        /* ... (Mantenha o restante do CSS aqui) ... */
+    </style>
+</head>
   </head>
-  <body>
+  <body class="root-font">
+    <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
     <header class="site-header">
       <div class="container header-inner">
         <a href="#" class="brand">
-          <img src="assets/logo.svg" alt="Intureon" class="logo-lg" />
+          <img
+            src="assets/logo.svg"
+            alt="Intureon"
+            class="logo-lg"
+            loading="lazy"
+          />
         </a>
         <nav class="header-actions">
-          <a class="btn ghost small" href="#oferta">Oferta</a>
-          <a class="btn whatsapp small" id="header-whatsapp" href="#"
-            ><i class="fa-brands fa-whatsapp"></i>
-            <span class="wa-label">WhatsApp</span></a
-          >
-          <a class="btn primary small" href="#contato">Agende Agora</a>
+          <a class="btn ghost small" href="#lead-form-hero">Quero Minha Vaga</a>
         </nav>
       </div>
     </header>
 
     <header class="hero">
       <div class="hero-decor"></div>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Oferta Black Friday • Vagas Limitadas</p>
-          <h1>
-            Destrave o próximo nível da sua empresa.<br /><strong
-              >Mentoria Estratégica — Intureon</strong
-            >
+      <div class="container hero-inner half-video">
+        <div class="hero-copy" style="padding-right:0;">
+          <p class="eyebrow" style="color: var(--accent-2); margin-bottom:8px;">Oferta Black Friday • Última Chamada</p>
+          <h1 style="font-size: clamp(28px, 4.2vw, 42px); line-height:1.1; margin-bottom:12px;">
+            <span>BLACK FRIDAY INTUREON:</span> O GPS da Gestão que Sua Empresa Precisa.
           </h1>
-          <p class="lead">
-            A Intureon oferece mentoria prática para fundadores e CEOs:
-            estratégias de crescimento, melhoria de gestão e fortalecimento de
-            times com foco em resultados.
-          </p>
-
-          <div class="hero-ctas">
-            <div>
-              <a class="btn primary" id="cta-reserve" href="#contato"
-                >Reserve sua Vaga — 50% OFF</a
-              >
-              <span class="cert-badge" data-cert-open>Inclui certificado</span>
-              <span class="cta-note"
-                >Vagas limitadas — promoção válida até o término do
-                contador</span
-              >
-            </div>
-            <a class="btn ghost" href="#oferta">Ver Oferta</a>
-          </div>
-
-          <div class="meta">
+          <p class="lead" style="margin-bottom:20px;">Desbloqueie o próximo nível de lucratividade com a Mentoria de Gestão mais completa do Brasil. Vagas em Fevereiro.</p>
+          <div class="meta" style="margin-bottom:24px;">
             <div class="countdown" aria-live="polite">
-              <span>Oferta termina em</span>
+              <span>Oferta expira em:</span>
               <div id="countdown-timer" class="timer">00d 00h 00m 00s</div>
             </div>
-            <div class="trust">
-              +10 anos • Startups & PMEs • Resultados reais
-            </div>
           </div>
+          <div class="hero-ctas" style="margin-bottom:10px;">
+            <a class="btn primary" id="cta-reserve" href="#lead-form-hero" style="font-size:18px; padding:16px 24px;">QUERO GARANTIR MINHA VAGA VIP AGORA!</a>
+          </div>
+          <span class="cta-note" style="color: var(--accent-2); font-weight:700; margin-top:0; display:block;">O valor promocional será revelado APENAS no grupo VIP de WhatsApp.</span>
+          <div class="trust" style="margin-top:16px;"><i class="fa-solid fa-medal" style="color: var(--accent);"></i> +10 Anos de Mercado | +50 Empresas Aceleradas</div>
         </div>
-
-        <aside class="hero-card">
-          <!-- avatar and brand text removed from video card as requested -->
-
-          <div class="hero-media" aria-hidden="false">
-            <div
-              class="video-thumb"
-              data-video="https://www.youtube.com/embed/VIDEO_ID?rel=0"
-            >
-              <img
-                alt="Vídeo de Apresentação"
-                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101217'/><text x='50%' y='50%' font-size='22' fill='%23ffffff' text-anchor='middle' font-family='Open Sans Condensed, sans-serif'>Vídeo de Apresentação (substituir)</text></svg>"
-              />
-              <button class="play" aria-label="Assistir vídeo">
-                <i class="fa-solid fa-play"></i>
-              </button>
-            </div>
-            <div class="offer-badge">
-              <div class="strike">R$ 6.000</div>
-              <div class="price">
-                <span class="old">R$ 6.000</span>
-                <span class="new">R$ 3.600</span>
+        <aside class="hero-card" id="card-column" style="display:flex; flex-direction:column; gap:16px; padding:0; background:none; box-shadow:none; border:none; align-self:stretch; justify-content:flex-start;">
+          <div class="card" id="lead-form-hero" style="background: var(--panel); border:1px solid rgba(255,255,255,0.05); padding:18px; width:100%;">
+            <div class="form-scarcity" style="margin-bottom:12px; color: var(--accent);">RESERVE AGORA: Oferta Black Friday e eBook GRÁTIS!</div>
+            <form class="mini-form lead-form" novalidate role="form" onsubmit="redirectToWhatsapp(event)">
+              <label>Nome
+                <input type="text" name="leadName" required />
+              </label>
+              <label>WhatsApp
+                <input type="tel" name="leadPhone" placeholder="+55 11 9xxxx-xxxx" required />
+              </label>
+              <div class="form-actions" style="margin-top:12px;">
+                <button class="btn primary block" type="submit" style="background: linear-gradient(90deg, var(--accent-2), #e63946);">BAIXAR EBOOK E ENTRAR NO GRUPO VIP</button>
               </div>
-              <div class="note">40% OFF — Black Friday • Vagas Limitadas</div>
-              <a class="btn primary block" href="#contato">Garantir Desconto</a>
-              <div style="margin-top: 8px">
-                <span class="cert-badge small" data-cert-open
-                  >Inclui certificado</span
-                >
-              </div>
-            </div>
+            </form>
+            <p class="muted" style="font-size:12px; text-align:center; margin-top:8px;">Seu eBook de estratégias será enviado no WhatsApp.</p>
           </div>
         </aside>
       </div>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
+      <section
+        class="container"
+        aria-label="Depoimentos de clientes"
+        style="padding-top: 36px; padding-bottom: 18px"
+      >
+        <h2 style="margin: 0 0 12px 0">
+          Resultados que nossos clientes alcançaram
+        </h2>
+        <div
+          class="testimonials"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+          "
+        >
+          <div class="card">
+            <div style="display: flex; gap: 12px; align-items: center">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 8px;
+                  background: #e9eef0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 700;
+                  color: #0b3;
+                "
+              >
+                AP
+              </div>
+              <div>
+                <strong>“Aumentamos margem em 27% em 3 meses”</strong>
+                <div class="muted">Ana Paula — CEO, Indústria XYZ</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div style="display: flex; gap: 12px; align-items: center">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 8px;
+                  background: #e9eef0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 700;
+                  color: #0b3;
+                "
+              >
+                RS
+              </div>
+              <div>
+                <strong
+                  >“Fluxo de caixa estabilizado e crescimento
+                  consistente”</strong
+                >
+                <div class="muted">Ricardo Sousa — Fundador, Serviços ABC</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div style="display: flex; gap: 12px; align-items: center">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 8px;
+                  background: #e9eef0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 700;
+                  color: #0b3;
+                "
+              >
+                ML
+              </div>
+              <div>
+                <strong>“Equipe mais alinhada e decisões mais rápidas”</strong>
+                <div class="muted">Marina Lopes — COO, TechStart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section problem-solution container">
-        <h2>Desafios comuns e como eu resolvo</h2>
+        <h2>Desafios comuns e como a Intureon resolve</h2>
         <div class="grid">
           <div class="card">
-            <h4>Crescimento estagnado</h4>
+            <h4>Crescimento Estagnado</h4>
             <p>
               Plano de crescimento replicável, com priorização de iniciativas
               que geram receita em 30-90 dias.
             </p>
           </div>
           <div class="card">
-            <h4>Processos ineficazes</h4>
+            <h4>Processos Ineficazes</h4>
             <p>
               Mapeamento e otimização de operações para reduzir desperdício e
               melhorar margem.
             </p>
           </div>
           <div class="card">
-            <h4>Equipes desalinhadas</h4>
+            <h4>Equipes Desalinhadas</h4>
             <p>
               Intervenções de cultura, OKRs claros e melhorias na comunicação
-              para elevar desempenho.
+              para elevar desempenho e performance.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Unified lead capture: collects name, email and phone; user can choose group and/or ebook -->
       <section class="section engage container lead-capture">
         <div class="split">
-          <div>
-            <h2>Inscreva-se para receceber um presente!</h2>
+          <div style="text-align: center">
+            <h2>Inscreva-se e receba um presente!</h2>
             <p class="muted">
-              Deixe seu nome, e-mail e WhatsApp. Você terá acesso a um e-book
-              exclusivo sobre estratégias de crescimento.
+              Deixe seu nome e WhatsApp no formulário acima (ou clique abaixo)
+              para baixar seu e-book exclusivo sobre estratégias de crescimento
+              e gestão.
             </p>
 
-            <!-- Use real present image and make it a download CTA -->
             <a
-              href="assets/Estratégias Comprovadas para Transformar sua empresa (1).png"
+              href="#lead-form-hero"
               class="ebook-link"
-              download
-              aria-label="Baixar eBook - presente"
+              aria-label="Ir para formulário de inscrição"
             >
               <img
                 src="assets/Estratégias Comprovadas para Transformar sua empresa (1).png"
                 alt="E-book grátis — presente"
                 class="ebook-gift"
+                loading="lazy"
               />
+            </a>
+
+            <a
+              class="btn primary"
+              href="#lead-form-hero"
+              style="
+                margin-top: 12px;
+                background: linear-gradient(90deg, var(--accent-2), #e63946);
+              "
+            >
+              Quero Baixar o eBook e a Oferta!
             </a>
           </div>
 
-          <div>
+          <div class="half-copy-form">
             <div class="card">
-              <h4>Inscreva-se</h4>
-              <form id="lead-form" class="mini-form">
-                <label
-                  >Nome completo
-                  <input type="text" id="lead-name" name="leadName" required />
-                </label>
-                <label
-                  >Email
-                  <input
-                    type="email"
-                    id="lead-email"
-                    name="leadEmail"
-                    required
-                  />
-                </label>
-                <label
-                  >WhatsApp
-                  <input
-                    type="tel"
-                    id="lead-phone"
-                    name="leadPhone"
-                    placeholder="+55 11 9xxxx-xxxx"
-                    required
-                  />
-                </label>
-                <label style="font-weight: 600">Opções</label>
-                <label
-                  class="checkbox"
-                  aria-label="Quero entrar no grupo WhatsApp"
-                  ><input type="checkbox" id="lead-want-group" /> Quero entrar
-                  no grupo WhatsApp</label
-                >
-                <label class="checkbox" aria-label="Quero baixar o eBook"
-                  ><input type="checkbox" id="lead-want-ebook" checked /> Quero
-                  baixar o eBook</label
-                >
-
-                <div class="form-actions">
-                  <button class="btn primary" type="submit">
-                    Enviar e Receber
-                  </button>
-                </div>
-                <div
-                  id="lead-feedback"
-                  class="feedback"
-                  aria-live="polite"
-                ></div>
-              </form>
+              <h4>Foco em Resultados</h4>
+              <p class="muted">
+                Nossa mentoria é 100% focada em execução. Transformamos a teoria
+                em lucros mensuráveis.
+              </p>
+              <ul class="bullets">
+                <li>
+                  <i class="fa-solid fa-check" style="color: var(--accent)"></i>
+                  Fluxo de caixa otimizado
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" style="color: var(--accent)"></i>
+                  Implementação de KPIs
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" style="color: var(--accent)"></i>
+                  Cultura de liderança forte
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
       <section id="oferta" class="section oferta container">
-        <h2>Oferta Black Friday — Mentoria Premium</h2>
-        <div class="offer-grid">
-          <div class="offer-features">
-            <ul>
-              <li>
-                Programa de mentoria com 6 encontros ao vivo — 1 vez por semana
-                (início em fevereiro)
-              </li>
-              <li>
-                Aulas gravadas e disponibilizadas na plataforma Kiwify para
-                participantes (acesso às gravações).
-              </li>
-              <li>Plano individual de desenvolvimento com metas trimestrais</li>
-              <li>
-                Sessões práticas para implementação de estratégias e revisão de
-                progresso
-              </li>
-              <li>Materiais, templates e acesso a gravações das sessões</li>
-              <li>Certificado de conclusão ao final da mentoria</li>
-            </ul>
-          </div>
-          <div class="offer-card">
-            <div class="tag">Black Friday</div>
-            <h3>Mentoria Premium</h3>
-            <p class="muted">
-              Perfeito para fundadores e líderes que querem acelerar decisões
-              estratégicas, implementar práticas e obter suporte contínuo
-              durante o processo.
-            </p>
-            <p class="muted" style="margin-top: 8px; font-weight: 700">
-              Início em fevereiro — 6 encontros ao vivo (1x por semana)
-            </p>
-            <div class="price big">
-              <span class="old">R$ 6.000</span>
-              <span class="new">R$ 3.600</span>
+        <div class="section-header">
+          <span class="section-tag">Oferta Exclusiva</span>
+          <h2 class="section-title">Mentoria Premium Black Friday</h2>
+          <p class="section-subtitle">Transforme sua gestão e acelere resultados com o programa mais completo do mercado</p>
+        </div>
+        
+        <div class="offer-grid-modern">
+          <div class="benefits-list">
+            <h3 class="benefits-title">O que está incluído:</h3>
+            <div class="benefit-cards">
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="benefit-content">
+                  <h4>6 Encontros ao Vivo</h4>
+                  <p>Sessões práticas com foco em implementação real. Início em fevereiro/2025.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="benefit-content">
+                  <h4>Aulas Gravadas</h4>
+                  <p>Acesso vitalício às gravações na plataforma Kiwify para revisar quando quiser.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="benefit-content">
+                  <h4>Plano Individualizado</h4>
+                  <p>Desenvolvimento personalizado com metas trimestrais ajustadas ao seu negócio.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="benefit-content">
+                  <h4>Implementação Prática</h4>
+                  <p>Sessões de estratégia aplicada com revisão contínua de progresso.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <div class="benefit-content">
+                  <h4>Materiais & Templates</h4>
+                  <p>Kit completo de ferramentas prontas para aplicar na sua operação.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-card highlight">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="benefit-content">
+                  <h4>Certificado de Conclusão</h4>
+                  <p>Reconhecimento oficial ao finalizar o programa.</p>
+                </div>
+              </div>
             </div>
-            <a class="btn primary block" href="#contato">Quero 40% OFF</a>
+          </div>
+          
+          <div class="offer-card-modern">
+            <div class="offer-badge-top">
+              <span class="badge-icon">🔥</span>
+              <span class="badge-text">Black Friday</span>
+            </div>
+            <h3 class="offer-title">Mentoria Premium Intureon</h3>
+            <p class="offer-description">
+              Para fundadores e líderes que querem decisões estratégicas assertivas, 
+              execução impecável e crescimento consistente.
+            </p>
+            <div class="offer-details">
+              <div class="detail-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>Início: Fevereiro 2025</span>
+              </div>
+              <div class="detail-item">
+                <i class="fa-solid fa-users-gear"></i>
+                <span>Vagas Limitadas</span>
+              </div>
+              <div class="detail-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Garantia de Resultados</span>
+              </div>
+            </div>
+            <div class="offer-price">
+              <p class="price-label">Valor exclusivo revelado no</p>
+              <p class="price-cta">Grupo VIP do WhatsApp 🎯</p>
+            </div>
+            <a
+              class="btn primary block offer-cta-btn"
+              href="#lead-form-hero"
+            >
+              <span>QUERO GARANTIR MINHA VAGA</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="offer-note">
+              <i class="fa-solid fa-lock"></i> 
+              Sem compromisso. Cancele quando quiser.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Certificate showcase: standalone, strategic placement -->
       <section id="certificate" class="section certificate container">
         <div class="split">
           <div>
-            <h2>Certificado de conclusão</h2>
+            <h2>Certificado de Conclusão</h2>
             <p class="muted">
               Ao concluir a Mentoria Intureon, cada participante recebe um
               certificado de participação assinado. O certificado comprova horas
@@ -287,11 +432,6 @@
                 profissionais, LinkedIn e apresentações de portfolio.
               </li>
             </ul>
-
-            <p style="margin-top: 14px">
-              Você pode baixar um exemplo do certificado antes de participar —
-              ele será personalizado com seu nome ao finalizar a mentoria.
-            </p>
           </div>
 
           <div>
@@ -300,6 +440,7 @@
                 <img
                   src="assets/xxxxxxxxx xxxxx.png"
                   alt="Exemplo de certificado Intureon"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -311,87 +452,39 @@
         <h2>Perguntas frequentes</h2>
         <div class="qa">
           <details>
-            <summary>Como funciona o diagnóstico?</summary>
+            <summary>Quando começa a Mentoria?</summary>
             <div class="answer">
-              Dois dias de imersão, com entrevistas e análise de dados
-              principais. Entregamos um roadmap prático ao final.
+              O programa de Mentoria Intureon tem previsão de início para a
+              primeira quinzena de **Fevereiro**. O cronograma exato será
+              comunicado em primeira mão no Grupo VIP do WhatsApp.
             </div>
           </details>
           <details>
-            <summary>
-              As aulas são gravadas? Onde posso assistir às gravações?
-            </summary>
+            <summary>Qual o valor da oferta Black Friday?</summary>
             <div class="answer">
-              Sim — todas as aulas são gravadas e disponibilizadas na plataforma
-              Kiwify. Participantes recebem acesso às gravações após cada
-              encontro.
+              O valor promocional exclusivo de Black Friday, que inclui um
+              desconto substancial, será revelado **apenas** para os membros do
+              nosso Grupo VIP no WhatsApp. Inscreva-se no formulário acima para
+              garantir seu acesso e não perder a oportunidade.
             </div>
           </details>
           <details>
-            <summary>Qual o ROI esperado?</summary>
+            <summary>As aulas são gravadas? Onde posso assistir?</summary>
             <div class="answer">
-              Depende do contexto, mas clientes veem aumento de receita e
-              eficiência dentro de 3-6 meses quando aplicam as prioridades.
+              Sim, todas as aulas são gravadas e disponibilizadas na plataforma
+              Kiwify. Os participantes recebem acesso às gravações após cada
+              encontro, podendo revisar o conteúdo a qualquer momento.
             </div>
           </details>
           <details>
-            <summary>Posso parcelar?</summary>
+            <summary>Posso parcelar o valor?</summary>
             <div class="answer">
-              Sim — opções de parcelamento disponíveis. A oferta Black Friday é
-              por tempo limitado.
+              Sim, opções de parcelamento estarão disponíveis. Todas as
+              condições de pagamento serão detalhadas no momento da revelação da
+              Oferta no Grupo VIP.
             </div>
           </details>
         </div>
-      </section>
-
-      <section id="contato" class="section contato container">
-        <h2>Reserve sua mentoria</h2>
-        <p class="muted">
-          Preencha o formulário e nossa equipe fará o contato para agendar a
-          mentoria.
-        </p>
-
-        <form id="contact-form" class="contact-form" novalidate>
-          <div class="form-grid">
-            <label>
-              Nome
-              <input type="text" name="name" id="name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" id="email" required />
-            </label>
-            <label>
-              Telefone
-              <input type="tel" name="phone" id="phone" />
-            </label>
-            <label class="full">
-              Mensagem / Objetivo
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                required
-              ></textarea>
-            </label>
-          </div>
-
-          <div class="form-actions">
-            <button class="btn primary" type="submit">
-              Agendar Mentoria — 40% OFF
-            </button>
-            <button class="btn ghost" type="button" id="btn-schedule">
-              Agendar Rápido (Calendário)
-            </button>
-          </div>
-
-          <div
-            id="form-feedback"
-            class="feedback"
-            role="status"
-            aria-live="polite"
-          ></div>
-        </form>
       </section>
     </main>
 
@@ -400,22 +493,96 @@
         <div class="footer-left">
           <img
             src="assets/logo.svg"
-            alt="Inturion"
+            alt="Intureon"
             style="height: 34px; vertical-align: middle; margin-right: 12px"
           />
-          <strong>Inturion</strong>
-          <small>Consultoria Estratégica • Black Friday 40% OFF</small>
+          <strong>Intureon</strong>
+          <small>Mentoria de Gestão • Black Friday</small>
         </div>
         <div class="footer-right">
           <small
-            >© <span id="year"></span> Inturion - Todos os direitos
+            >© <span id="year">2025</span> Intureon - Todos os direitos
             reservados</small
           >
         </div>
       </div>
     </footer>
-    <button id="whatsapp-fab" aria-label="Abrir WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </button>
+
+    <script>
+      // Função principal para lidar com o envio do formulário e redirecionar
+      function redirectToWhatsapp(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const name = form.leadName.value;
+        const phone = form.leadPhone.value;
+
+        if (!name || !phone) {
+          alert(
+            "Por favor, preencha seu Nome e WhatsApp para garantir sua vaga VIP."
+          );
+          return;
+        }
+
+        // 1. SIMULAÇÃO DE ENVIO DE DADOS PARA O BACKEND (você deve integrar aqui)
+        console.log(`Lead Capturado: Nome: ${name}, WhatsApp: ${phone}`);
+        // AQUI você enviaria os dados para a sua ferramenta de email marketing/CRM.
+
+        // 2. Confirmação e Redirecionamento CRÍTICO para o Grupo VIP
+        alert(
+          `🚀 Sucesso, ${name}! Sua vaga VIP está reservada e o eBook será enviado. Você será redirecionado para o Grupo VIP do WhatsApp agora.`
+        );
+
+        // **SUBSTITUIR PELO LINK REAL DE CONVITE DO GRUPO VIP**
+        const whatsappLink =
+          "https://chat.whatsapp.com/SeuLinkDoGrupoVIPExemplo";
+        window.location.href = whatsappLink;
+      }
+
+      // Funções auxiliares (Placeholder para o Timer)
+      document.addEventListener("DOMContentLoaded", () => {
+        const timerElement = document.getElementById("countdown-timer");
+        // Defina uma data de fim para a Black Friday (Ex: 2025-11-25T23:59:59)
+        const blackFridayEnd = new Date("2025-11-25T23:59:59").getTime();
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = blackFridayEnd - now;
+
+          // Cálculos
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          if (distance < 0) {
+            timerElement.innerHTML = "OFERTA EXPIRADA";
+            const form = document.getElementById("lead-form-hero");
+            if (form)
+              form.querySelector('button[type="submit"]').disabled = true;
+          } else {
+            // Formato digital (00d 00h 00m 00s)
+            timerElement.innerHTML = `${String(days).padStart(
+              2,
+              "0"
+            )}d ${String(hours).padStart(2, "0")}h ${String(minutes).padStart(
+              2,
+              "0"
+            )}m ${String(seconds).padStart(2, "0")}s`;
+          }
+        }
+
+        // Iniciar e atualizar a contagem
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Atualiza o ano no footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
+    </script>
   </body>
 </html>

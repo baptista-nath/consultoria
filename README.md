@@ -71,6 +71,23 @@ Personalização rápida
 - Substitua placeholders de clientes e testemunhos por conteúdo real.
 - Integre o formulário com seu backend trocando o bloco de envio por um fetch para sua API.
 
+## Configuração rápida (WhatsApp + Webhook)
+
+1. Abra `assets/script.js` e localize as constantes no topo da sessão de configuração:
+
+	- `WHATSAPP_GROUP` — coloque aqui o link do convite do grupo do WhatsApp (ex.: `https://chat.whatsapp.com/SEU_LINK`).
+	- `WEBHOOK_URL` — (opcional) URL do seu endpoint para receber leads em JSON.
+
+2. Exemplo:
+
+```js
+const WHATSAPP_GROUP = 'https://chat.whatsapp.com/AAAAAA...';
+const WEBHOOK_URL = 'https://hooks.seuservico.com/intureon-leads';
+```
+
+O sistema salvará os leads no `localStorage` e fará um `POST` para o webhook (quando configurado). Caso queira integrar com um CRM (Pipedrive, HubSpot, LeadConnector), insira o endpoint apropriado e quaisquer headers/autorizações necessárias.
+
+
 - Substitua placeholders de clientes, testemunhos e o `VIDEO_ID` do thumbnail por conteúdo real.
 - Adicionar imagens profissionais do Christian e logos reais dos clientes.
 - Integrar com Calendly/HubSpot/LeadConnector para agendamento automático.

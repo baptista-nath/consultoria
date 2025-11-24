@@ -1043,7 +1043,12 @@ h1 strong {
   .form-grid {
     grid-template-columns: 1fr;
   }
-  /* Mostrar a imagem de fundo também no mobile com overlay um pouco mais forte */
+  /* Ajustar background para mobile sem cortar */
+  .hero::before {
+    opacity: 0.15;
+    background-size: contain;
+    background-position: center top;
+  }
   .hero-decor {
     display: block;
   }
@@ -1053,6 +1058,15 @@ h1 strong {
       rgba(0, 0, 0, 0.34),
       rgba(0, 0, 0, 0.26)
     );
+  }
+}
+
+@media (max-width: 640px) {
+  /* Ajustar ainda mais no mobile pequeno */
+  .hero::before {
+    opacity: 0.12;
+    background-size: contain;
+    background-position: center top;
   }
 }
 
